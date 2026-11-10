@@ -12,3 +12,36 @@ header a,.video-caption a{display:inline-flex;align-items:center;min-height:44px
 @media(max-width:650px){header{gap:12px;padding-block:8px;font-size:12px}.video-caption{font-size:12px}.scroll-sequence{height:275svh}.info-card{height:70svh;top:16svh;padding:16px;gap:10px}.info-card:nth-of-type(2){top:18svh}.info-card:nth-of-type(3){top:20svh}.info-card h3{font-size:clamp(20px,6vw,26px)}.bio{font-size:18px;line-height:1.5}.about-title{font-size:clamp(18px,5.3vw,34px)}}
 @media(max-height:530px),(prefers-reduced-motion:reduce){.scroll-sequence{height:auto}.sequence-stage{height:auto;position:relative;overflow:visible;padding:30px 4%}.sequence-title{position:relative;padding:45px 0}.info-card,.info-card:nth-of-type(2),.info-card:nth-of-type(3){position:relative;top:auto;left:auto;width:min(100%,620px);height:auto;visibility:visible!important;transform:none!important;margin:20px auto}.info-card img{max-height:240px;flex:auto}.sequence-bottom{position:static}}
 #about,#about .blackbar{background:#000;color:#fff} #about .bio p{border-color:#595959}
+
+.footer-bottom {
+  justify-content: flex-start;
+}
+
+@media (max-width: 650px) {
+  .hero header {
+    gap: 8px;
+    padding-inline: 4%;
+  }
+
+  .hero header nav {
+    gap: 8px;
+  }
+
+  .director-profile {
+    gap: 20px;
+  }
+
+  .director-profile .bio p {
+    padding-top: 16px;
+    margin-bottom: 20px;
+    overflow-wrap: anywhere;
+  }
+
+  .phone {
+    padding-block: 32px 24px;
+  }
+
+  .footer-bottom {
+    padding: 16px 4%;
+  }
+}
